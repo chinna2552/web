@@ -1,0 +1,36 @@
+.sidenav-wrapper {
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+  }
+  
+  mat-sidenav{
+    width: 200px;
+    padding: 20px;
+    background-color: rgba(0 , 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    
+  }
+  .mat-button {
+    color: #fff;
+  }
+  .mat-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  mat-sidenav-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+  button span {
+    margin: 10px;
+  }
+  mat-toolbar {
+    background-color: #480a0a;
+    color: #fff;
+  }

@@ -1,0 +1,36 @@
+<mat-toolbar>
+  <mat-icon>menu</mat-icon>
+  <span>Logo</span>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-wrapper">
+  <mat-sidenav opened mode="side">
+    <a [routerLink]="'/home'" color="primary">
+      <button mat-button>
+        <mat-icon>home</mat-icon>
+        <span>home</span>
+      </button>
+    </a>
+    <a [routerLink]="'/profile'">
+      <button mat-button>
+        <mat-icon>User</mat-icon>
+        <span>profile</span>
+      </button>
+    </a>
+    <a [routerLink]="'/contact-us'" color="primary">
+      <button mat-button>
+        <mat-icon>call</mat-icon>
+        <span>Contact Us</span>
+      </button>
+    </a>
+    <a [routerLink]="'/forms'" color="primary">
+      <button mat-button>
+        <mat-icon>pages</mat-icon>
+        <span>forms</span>
+      </button>
+    </a>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
